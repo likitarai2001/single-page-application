@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #242929;
+    line-height: 1.4;
+    /* background-color: #f6f8f8; */
+}
+
+.hr-line {
+    margin: 0px 0px;
+}
