@@ -1,16 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #242929;
-    line-height: 1.4;
-    /* background-color: #f6f8f8; */
+  font-family: "Fira Sans", sans-serif;
+  color: #242929;
+  line-height: 1.4;
+}
+
+.mainDiv {
+  padding: 0;
 }
 
 .hr-line {
-    margin: 0px 0px;
+  margin: 0px 0px;
+}
+
+.home_ui {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/home.jpg");
+}
+
+.home_heading {
+  font-size: 4em;
+  color: white;
+}
+
+.about_block_three {
+  margin-bottom: 30px;
+}
+
+.about_block_three i {
+  font-size: 32px;
+}
+
+.about_cards {
+  display: block;
+  border: 2px solid #d5d5d5;
+  border-radius: 4px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.about_cards:before {
+  display: block;
+  content: "";
+  width: 9%;
+  height: 17%;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid #474747;
+  border-right: 2px solid #474747;
+  transition: all 0.5s ease 0s;
+}
+.about_cards:after {
+  display: block;
+  content: "";
+  width: 9%;
+  height: 17%;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid #474747;
+  border-left: 2px solid #474747;
+  transition: all 0.5s ease 0s;
+}
+.padding-15px-bottom {
+  padding-bottom: 15px;
+}
+.about_block_three h4 {
+  color: #6f6f6f;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.about_block_three p {
+  margin-bottom: 0;
+  color: #757575;
+}
+.about_cards:hover {
+  opacity: 1;
+  border-color: #d5d5d5;
+}
+
+.about_cards:hover:before,
+.about_cards:hover:after {
+  width: 95%;
+  height: 90%;
+}
+
+.img_carousel_container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.img_slider {
+    display: none;
+}
+
+.slider_img {
+    width: 100%;
+    height: 850px;
+}
+.service-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  perspective: 1000px;
+  background-color: #474747;
+}
+.service-icon {
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.service-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  background-color: #474747;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: translateY(110px) rotateX(-90deg);
+}
+.service-box .service-icon .front-content {
+  position: relative;
+  top: 80px;
+  transform: translateY(-50%);
+}
+
+.service-box .service-icon .front-content i {
+  font-size: 28px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.service-box .service-icon .front-content h3 {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.service-box .service-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.service-box .service-content p {
+  font-size: 13px;
+  color: #b1b1b1;
+  margin: 0;
+}
+.service-box:hover .service-icon {
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+.service-box:hover .service-content {
+  opacity: 1;
+  transform: rotateX(0);
+}
+
+#services,
+#about {
+  background-color: #f2f3f4;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
