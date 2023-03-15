@@ -17,7 +17,7 @@ function showSlides(n) {
 }
 
 function plusSlides(n) {
-  dispSlide((slider += n));
+  showSlides((slider += n));
 }
 
 function home() {
@@ -28,10 +28,24 @@ function about() {
   location.href = "#about";
 }
 
-function images() {
-  location.href = "#img_carousel";
+function projects() {
+  location.href = "#projectCarousel";
 }
 
 function services() {
   location.href = "#services";
+}
+
+function boxRotate(num){
+  let service_icon_element = document.getElementsByClassName("service-icon");
+  let service_content_element = document.getElementsByClassName("service-content");
+  service_icon_element[num].classList.add("service-icon-rotate");
+  service_content_element[num].classList.add("service-content-rotate");
+}
+
+function boxNormal(num){
+  let service_icon_element = document.getElementsByClassName("service-icon");
+  let service_content_element = document.getElementsByClassName("service-content");
+  service_icon_element[num].classList.remove("service-icon-rotate");
+  service_content_element[num].classList.remove("service-content-rotate");
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>AESTHETICS</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,8 @@
 </head>
 <body>
     <div class="container-fluid mainDiv">
-        <!-- Navbar -->
-    <header class="">
-        <!-- <div class="container-fluid"> -->
+    <!-- Navbar -->
+    <header>
             <nav class="navbar navbar-expand-sm navbar-light bg-light p-3">
                 <a class="navbar-brand pe-5" href="index.html">AESTHETICS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -29,7 +28,7 @@
                             <span class="nav-link ms-3 cursor" onclick="about()">About Us</span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link ms-3 cursor" onclick="images()">Images</span>
+                            <span class="nav-link ms-3 cursor" onclick="projects()">Projects</span>
                         </li>
                         <li class="nav-item">
                             <span class="nav-link ms-3 cursor" onclick="services()">Services</span>
@@ -37,11 +36,6 @@
                     </ul>
                 </div>
             </nav>
-            <!-- <hr class="hr-line"> -->
-            <div>
-
-            </div>
-        <!-- </div> -->
     </header>
     
     <!-- Home Section -->
@@ -60,7 +54,6 @@
     <!-- About Us -->
     <section id="about">
         <div class="container-fluid">
-            <!-- <hr class="hr-style"> -->
             <div class="container pt-4">
                 <div class="row">
                     <h2 class="display-4">About</h2>
@@ -139,33 +132,29 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Image Carousel -->
-    <section id="img_carousel">
+    <section id="projectCarousel">
         <div class="container-fluid">
             <div class="row">
                 <h2 class="display-4">Our Projects</h2>
             </div>
             <div class="img_carousel_container">
                 <div class="img_slider">
-                    <img src="images/6194b73939c57d1542e06ea9_Rhythms of Nature 1-p-800.jpeg" class="slider_img">
-                </div>
-                <div class="img_slider">
-                    <img src="images/6194b7ac1d34aaae424e0ac5_Cabin in Carpathian 1-min-p-800.jpeg" class="slider_img">
-                </div>
-                <div class="img_slider">
-                    <img src="images/61dca6e99a12bc67cc179d68_charleston-forge-p-800.jpeg" class="slider_img">
-                </div>
-                <div class="img_slider">
-                    <img src="images/61dcd5b64e2feac87e5019c7_nathan-anthony-2.png" class="slider_img">
-                </div>
-                <div class="img_slider">
                     <img src="images/img1.jpg" class="slider_img">
+                </div>
+                <div class="img_slider">
+                    <img src="images/img2.jpg" class="slider_img">
+                </div>
+                <div class="img_slider">
+                    <img src="images/img3.jpeg" class="slider_img">
+                </div>
+                <div class="img_slider">
+                    <img src="images/img4.jpeg" class="slider_img">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -191,8 +180,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-6 ">
-                        <div class="service-box">
-                            <div class="service-icon yellow">
+                        <div class="service-box" onmouseover="boxRotate(0)" onmouseout="boxNormal(0)">
+                            <div class="service-icon">
                                 <div class="front-content">
                                     <i class="fa fa-star-o"></i>
                                     <h3>Interior</h3>
@@ -204,9 +193,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 ">
-                        <div class="service-box">
-                            <div class="service-icon orange">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-box" onmouseover="boxRotate(1)" onmouseout="boxNormal(1)">
+                            <div class="service-icon">
                                 <div class="front-content">
                                     <i class="fa fa-star-o"></i>
                                     <h3>Exterior</h3>
@@ -219,8 +208,8 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="service-box ">
-                            <div class="service-icon red">
+                        <div class="service-box" onmouseover="boxRotate(2)" onmouseout="boxNormal(2)">
+                            <div class="service-icon">
                                 <div class="front-content">
                                     <i class="fa fa-star-o"></i>
                                     <h3>Terraces</h3>
@@ -233,8 +222,8 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="service-box">
-                            <div class="service-icon grey">
+                        <div class="service-box" onmouseover="boxRotate(3)" onmouseout="boxNormal(3)">
+                            <div class="service-icon">
                                 <div class="front-content">
                                     <i class="fa fa-star-o"></i>
                                     <h3>Projects</h3>
