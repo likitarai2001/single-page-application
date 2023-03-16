@@ -39,6 +39,10 @@ body {
   color: white;
 }
 
+#about{
+  padding-top: 60px;
+}
+
 .about_block_three {
   margin-bottom: 30px;
 }
@@ -103,6 +107,10 @@ body {
 .about_cards:hover:after {
   width: 95%;
   height: 90%;
+}
+
+#projectCarousel{
+padding-top: 70px;
 }
 
 .img_carousel_container {
@@ -233,4 +241,12 @@ img {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+#btn-back-to-top{
+  position: fixed;
+  bottom: 76px;
+  right: 20px;
+  border-radius: 50%;
+  display: none;
 }
